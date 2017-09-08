@@ -5,8 +5,7 @@
       <p>{{classes}}</p>
 
       <svg width="701" height="3560" version="1.1" baseProfile="full"
-           xmlns="http://www.w3.org/2000/svg"
-           style="">
+           xmlns="http://www.w3.org/2000/svg">
         <defs>
           <marker id="ArrowGeneralization"
                   viewBox="0 0 20 20"
@@ -31,37 +30,40 @@
                   stroke="black"></path>
           </marker>
         </defs>
-        <g :transform="`translate(${200 * index + 1} 1)`" v-for="(clazz, index) in classes">
+        <g :transform="`translate(${clazz.x} ${clazz.y})`" v-for="(clazz, index) in classes">
           <class :compartments="clazz.compartments"
-                 :width=120
-                 :key="clazz.id"></class>
+                 :width="clazz.width || 120"
+                 :key="clazz.id"
+                 ref="classes"></class>
         </g>
-        <arrow :x1="200" :y1="30" :x2="122" :y2="80" type="gen" fromLabel="from" toLabel="to"></arrow>
-        <arrow :x1="200" :y1="30" :x2="122" :y2="80" type="gen" fromLabel="from" toLabel="to"></arrow>
-        <arrow :x1="200" :y1="80" :x2="122" :y2="20" type="ref" fromLabel="from" toLabel="to"></arrow>
+        <!--<arrow :x1="200" :y1="30" :x2="122" :y2="80" type="gen" fromLabel="from" toLabel="to"></arrow>-->
       </svg>
     </div>
   </div>
 </template>
 
 <script>
-  import { mapState } from 'vuex'
+  import { mapState, mapMutations } from 'vuex'
   import Class from './Class'
   import Arrow from './Arrow'
+  import { SET_DIMENSIONS } from '../store/mutations'
 
   export default {
     name: 'hello-world',
-    methods: {
-      showSweetAlert () {
-
-      }
-    },
     computed: {
       ...mapState(['classes'])
+    },
+    methods: {
+      ...mapMutations({
+        setDimensions: SET_DIMENSIONS
+      })
     },
     components: {
       Class,
       Arrow
+    },
+    mounted () {
+      this.setDimensions(this.$refs.classes.map(clazz => clazz.getDimensions()))
     }
   }
 </script>

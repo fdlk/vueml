@@ -9,7 +9,9 @@ const state: State = {
     compartments: [
       {lines: ['Pirate']},
       {lines: ['+ eyeCount: Int']}
-    ]
+    ],
+    x: 0,
+    y: 0
   },
   {
     id: 'Ship',
@@ -17,8 +19,13 @@ const state: State = {
       {lines: ['Ship']},
       {lines: ['+ masts: Int']},
       {lines: ['+ sail()', '+ anchor()', '- board()']}
-    ]
-  }]
+    ],
+    x: 0,
+    y: 0
+  }],
+  edges: [
+    {from: 'Pirate', to: 'Ship', type: 'ref'}
+  ]
 }
 
 export default state

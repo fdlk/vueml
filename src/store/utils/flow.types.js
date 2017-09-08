@@ -11,9 +11,22 @@ export type Compartment = {
 
 export type Clazz = {
   id: string,
-  compartments: Compartment[]
+  compartments: Compartment[],
+  width?: number,
+  height?: number
+}
+
+export type Edge = {
+  from: string,
+  to: string
 }
 
 export type State = {
-  classes: Clazz[]
+  classes: Clazz[],
+  edges: Edge[]
+}
+
+export type Size = {
+  width: number,
+  height: number
 }

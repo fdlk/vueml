@@ -5,7 +5,7 @@
        :transform="`translate(0 ${y[index]})`"
        :key="index">
       <divider :width="width" v-if="index > 0"></divider>
-      <compartment :lines="compartment.lines"></compartment>
+      <compartment :lines="compartment.lines" ref="compartments"></compartment>
     </g>
   </g>
 </template>
@@ -13,6 +13,7 @@
 <script>
   import Compartment from './Compartment'
   import Divider from './Divider'
+  import { sum } from 'ramda'
 
   // vertical layout
   // lines have height 15, dividers have height 1, compartments have padding 7.5
@@ -25,6 +26,14 @@
     computed: {
       y () {
         return this.compartments.map(height).reduce(cumulativeSum, [0])
+      }
+    },
+    methods: {
+      getDimensions () {
+        return {
+          width: Math.max.apply(Math, this.$refs.compartments.map(c => c.getWidth())),
+          height: sum(this.compartments.map(height))
+        }
       }
     },
     components: {
