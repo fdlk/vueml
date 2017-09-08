@@ -36,9 +36,9 @@
                  :width=120
                  :key="clazz.id"></class>
         </g>
-        <arrow :x1="200" :y1="30" :x2="122" :y2="80" :type="gen" :fromLabel="from" :toLabel="to"></arrow>
-        <arrow :x1="200" :y1="30" :x2="122" :y2="80" :type="gen" :fromLabel="from" :toLabel="to"></arrow>
-        <arrow :x1="200" :y1="80" :x2="122" :y2="20" :type="ref" :fromLabel="from" :toLabel="to"></arrow>
+        <arrow :x1="200" :y1="30" :x2="122" :y2="80" type="gen" fromLabel="from" toLabel="to"></arrow>
+        <arrow :x1="200" :y1="30" :x2="122" :y2="80" type="gen" fromLabel="from" toLabel="to"></arrow>
+        <arrow :x1="200" :y1="80" :x2="122" :y2="20" type="ref" fromLabel="from" toLabel="to"></arrow>
       </svg>
     </div>
   </div>
