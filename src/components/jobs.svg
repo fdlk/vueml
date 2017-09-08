@@ -1,0 +1,142 @@
+<svg width="701" height="3560" version="1.1" baseProfile="full"
+     xmlns="http://www.w3.org/2000/svg"
+     style="font-weight: bold; font-size: 12pt; font-family: Calibri, Helvetica, sans-serif; stroke-width: 3px; stroke-linejoin: round; stroke-linecap: round;">
+  <rect x="13.5" y="44.5" height="3503" width="675"
+        style="stroke: rgb(51, 50, 46); fill: rgb(238, 232, 213);"></rect>
+  <path d="M13.5 44.5 L13.5 13.5 L89 13.5 L89 44.5 Z"
+        style="stroke: rgb(51, 50, 46); fill: rgb(238, 232, 213);"></path>
+  <text x="21.5" y="35">sys_job</text>
+  <path d="M13.5 44.5 L688.5 44.5" style="stroke: rgb(51, 50, 46); fill: none;"></path>
+  <text x="322.5" y="161">file</text>
+  <text x="543.8" y="420.8">0..1</text>
+  <path d="M314.5 141 L414.5 141 L585.8 428.8 L585.8 428.8 "
+        style="stroke: rgb(51, 50, 46); fill: none;"></path>
+  <path d="M568.7 415.7 L580.7 420.2 L582.4 407.5 L585.8 428.8 Z"
+        style="stroke: rgb(51, 50, 46); fill: rgb(51, 50, 46);"></path>
+  <text x="314" y="767.5">file</text>
+  <text x="543.8" y="451.8">0..1</text>
+  <path d="M306 747.5 L414.5 747.5 L585.8 459.8 L585.8 459.8 "
+        style="stroke: rgb(51, 50, 46); fill: none;"></path>
+  <path d="M582.4 481 L580.7 468.3 L568.7 472.8 L585.8 459.8 Z"
+        style="stroke: rgb(51, 50, 46); fill: rgb(51, 50, 46);"></path>
+  <text x="288.5" y="2827">jobExecutionType</text>
+  <text x="498" y="2799">1</text>
+  <path d="M280.5 2807 L414.5 2807 L514.5 2807 L514.5 2807 "
+        style="stroke: rgb(51, 50, 46); fill: none;"></path>
+  <path d="M494.5 2815 L504.5 2807 L494.5 2799 L514.5 2807 Z"
+        style="stroke: rgb(51, 50, 46); fill: rgb(51, 50, 46);"></path>
+  <rect x="26.5" y="57.5" height="167" width="288"
+        style="stroke: rgb(51, 50, 46); fill: rgb(253, 246, 227);"></rect>
+  <text x="34.5" y="79">sys_job_AmazonBucketJobExecution</text>
+  <path d="M26.5 88.5 L314.5 88.5" style="stroke: rgb(51, 50, 46); fill: none;"></path>
+  <text x="34.5" y="110">bucket:string</text>
+  <text x="34.5" y="125">key:string</text>
+  <text x="34.5" y="140">expression:bool</text>
+  <text x="34.5" y="155">accessKey:string</text>
+  <text x="34.5" y="170">secretKey:string</text>
+  <text x="34.5" y="185">region:string</text>
+  <text x="34.5" y="200">targetEntityId:string</text>
+  <text x="34.5" y="215">extension:string</text>
+  <rect x="536.5" y="428.5" height="31" width="118"
+        style="stroke: rgb(51, 50, 46); fill: rgb(253, 246, 227);"></rect>
+  <text x="544.5" y="450">sys_FileMeta</text>
+  <rect x="35.5" y="424.5" height="77" width="271"
+        style="stroke: rgb(51, 50, 46); fill: rgb(253, 246, 227);"></rect>
+  <text x="43.5" y="446">sys_job_AnnotationJobExecution</text>
+  <path d="M35.5 455.5 L306.5 455.5" style="stroke: rgb(51, 50, 46); fill: none;"></path>
+  <text x="43.5" y="477">targetName:string</text>
+  <text x="43.5" y="492">annotators:string</text>
+  <rect x="35.5" y="701.5" height="92" width="271"
+        style="stroke: rgb(51, 50, 46); fill: rgb(253, 246, 227);"></rect>
+  <text x="43.5" y="723">sys_job_FileIngestJobExecution</text>
+  <path d="M35.5 732.5 L306.5 732.5" style="stroke: rgb(51, 50, 46); fill: none;"></path>
+  <text x="43.5" y="754">url:string</text>
+  <text x="43.5" y="769">loader:enum</text>
+  <text x="43.5" y="784">targetEntityId:string</text>
+  <rect x="56.5" y="993.5" height="167" width="229"
+        style="stroke: rgb(51, 50, 46); fill: rgb(253, 246, 227);"></rect>
+  <text x="64.8" y="1015">sys_job_GavinJobExecution</text>
+  <path d="M56.5 1024.5 L285.5 1024.5" style="stroke: rgb(51, 50, 46); fill: none;"></path>
+  <text x="64.5" y="1046">filename:string</text>
+  <text x="64.5" y="1061">extension:string</text>
+  <text x="64.5" y="1076">comments:int</text>
+  <text x="64.5" y="1091">cadds:int</text>
+  <text x="64.5" y="1106">vcfs:int</text>
+  <text x="64.5" y="1121">errors:int</text>
+  <text x="64.5" y="1136">indels:int</text>
+  <text x="64.5" y="1151">skippeds:int</text>
+  <rect x="56.5" y="1360.5" height="62" width="229"
+        style="stroke: rgb(51, 50, 46); fill: rgb(253, 246, 227);"></rect>
+  <text x="64.8" y="1382">sys_job_IndexJobExecution</text>
+  <path d="M56.5 1391.5 L285.5 1391.5" style="stroke: rgb(51, 50, 46); fill: none;"></path>
+  <text x="64.5" y="1413">indexActionJobID:string</text>
+  <rect x="64.5" y="1622.5" height="272" width="212"
+        style="stroke: rgb(51, 50, 46); fill: rgb(253, 246, 227);"></rect>
+  <text x="85.5" y="1644">sys_job_JobExecution</text>
+  <path d="M64.5 1653.5 L276.5 1653.5" style="stroke: rgb(51, 50, 46); fill: none;"></path>
+  <text x="72.5" y="1675">identifier:string</text>
+  <text x="72.5" y="1690">user:string</text>
+  <text x="72.5" y="1705">status:enum</text>
+  <text x="72.5" y="1720">type:string</text>
+  <text x="72.5" y="1735">submissionDate:datetime</text>
+  <text x="72.5" y="1750">startDate:datetime</text>
+  <text x="72.5" y="1765">endDate:datetime</text>
+  <text x="72.5" y="1780">progressInt:int</text>
+  <text x="72.5" y="1795">progressMax:int</text>
+  <text x="72.5" y="1810">progressMessage:string</text>
+  <text x="72.5" y="1825">log:text</text>
+  <text x="72.5" y="1840">resultUrl:hyperlink</text>
+  <text x="72.5" y="1855">failureEmail:string</text>
+  <text x="72.5" y="1870">successEmail:string</text>
+  <text x="72.5" y="1885">scheduledJobId:string</text>
+  <rect x="47.5" y="2094.5" height="122" width="246"
+        style="stroke: rgb(51, 50, 46); fill: rgb(253, 246, 227);"></rect>
+  <text x="55.8" y="2116">sys_job_MappingJobExecution</text>
+  <path d="M47.5 2125.5 L293.5 2125.5" style="stroke: rgb(51, 50, 46); fill: none;"></path>
+  <text x="55.5" y="2147">mappingProjectId:string</text>
+  <text x="55.5" y="2162">targetEntityTypeId:string</text>
+  <text x="55.5" y="2177">addSourceAttribute:bool</text>
+  <text x="55.5" y="2192">packageId:string</text>
+  <text x="55.5" y="2207">label:string</text>
+  <rect x="56.5" y="2416.5" height="137" width="229"
+        style="stroke: rgb(51, 50, 46); fill: rgb(253, 246, 227);"></rect>
+  <text x="64.8" y="2438">sys_job_SortaJobExecution</text>
+  <path d="M56.5 2447.5 L285.5 2447.5" style="stroke: rgb(51, 50, 46); fill: none;"></path>
+  <text x="64.5" y="2469">name:string</text>
+  <text x="64.5" y="2484">resultEntity:string</text>
+  <text x="64.5" y="2499">sourceEntity:string</text>
+  <text x="64.5" y="2514">ontologyIri:string</text>
+  <text x="64.5" y="2529">deleteUrl:hyperlink</text>
+  <text x="64.5" y="2544">Threshold:decimal</text>
+  <rect x="60.5" y="2753.5" height="107" width="220"
+        style="stroke: rgb(51, 50, 46); fill: rgb(253, 246, 227);"></rect>
+  <text x="68.5" y="2775">sys_job_ScheduledJobType</text>
+  <path d="M60.5 2784.5 L280.5 2784.5" style="stroke: rgb(51, 50, 46); fill: none;"></path>
+  <text x="68.5" y="2806">name:string</text>
+  <text x="68.5" y="2821">label:string</text>
+  <text x="68.5" y="2836">description:text</text>
+  <text x="68.5" y="2851">schema:text</text>
+  <rect x="514.5" y="2791.5" height="31" width="161"
+        style="stroke: rgb(51, 50, 46); fill: rgb(253, 246, 227);"></rect>
+  <text x="522.8" y="2813">sys_md_EntityType</text>
+  <rect x="73.5" y="3060.5" height="197" width="195"
+        style="stroke: rgb(51, 50, 46); fill: rgb(253, 246, 227);"></rect>
+  <text x="86" y="3082">sys_job_ScheduledJob</text>
+  <path d="M73.5 3091.5 L268.5 3091.5" style="stroke: rgb(51, 50, 46); fill: none;"></path>
+  <text x="81.5" y="3113">id:string</text>
+  <text x="81.5" y="3128">name:string</text>
+  <text x="81.5" y="3143">description:text</text>
+  <text x="81.5" y="3158">cronExpression:string</text>
+  <text x="81.5" y="3173">active:bool</text>
+  <text x="81.5" y="3188">user:string</text>
+  <text x="81.5" y="3203">failureEmail:email</text>
+  <text x="81.5" y="3218">successEmail:email</text>
+  <text x="81.5" y="3233">type:categorical</text>
+  <text x="81.5" y="3248">parameters:text</text>
+  <rect x="52.5" y="3457.5" height="77" width="237"
+        style="stroke: rgb(51, 50, 46); fill: rgb(253, 246, 227);"></rect>
+  <text x="60.5" y="3479">sys_job_ScriptJobExecution</text>
+  <path d="M52.5 3488.5 L289.5 3488.5" style="stroke: rgb(51, 50, 46); fill: none;"></path>
+  <text x="60.5" y="3510">name:string</text>
+  <text x="60.5" y="3525">parameters:text</text>
+</svg>

@@ -6,15 +6,6 @@
   </div>
 </template>
 
-<style lang="scss">
-  @import "~variables";
-  @import "~mixins";
-
-  #app {
-    background-color: $red;
-  }
-</style>
-
 <script>
   export default {
     name: 'molgenis-app'
