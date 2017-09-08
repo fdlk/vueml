@@ -11,8 +11,6 @@ export type Compartment = {
 
 export type Clazz = {
   id: string,
-  x: number,
-  y: number,
   compartments: Compartment[]
 }
 

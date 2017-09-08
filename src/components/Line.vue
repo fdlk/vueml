@@ -1,10 +1,10 @@
 <template>
-  <text :x="x+8" :y="y">{{text}}</text>
+  <text :x="8">{{text}}</text>
 </template>
 
 <script>
   export default {
     name: 'line',
-    props: ['x', 'y', 'text']
+    props: ['text']
   }
 </script>

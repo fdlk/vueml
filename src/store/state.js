@@ -6,18 +6,17 @@ export const INITIAL_STATE = window.__INITIAL_STATE__ || {}
 const state: State = {
   classes: [{
     id: 'Pirate',
-    x: 10,
-    y: 10,
     compartments: [
-      {
-        lines: ['Pirate']
-      },
-      {
-        lines: ['+ eyeCount: Int']
-      },
-      {
-        lines: ['+ raid()', '+ pillage()']
-      }
+      {lines: ['Pirate']},
+      {lines: ['+ eyeCount: Int']}
+    ]
+  },
+  {
+    id: 'Ship',
+    compartments: [
+      {lines: ['Ship']},
+      {lines: ['+ masts: Int']},
+      {lines: ['+ sail()', '+ anchor()', '- board()']}
     ]
   }]
 }
