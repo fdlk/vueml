@@ -18,12 +18,18 @@ export type Clazz = {
 
 export type Edge = {
   from: string,
-  to: string
+  to: string,
+  points: Point[]
 }
 
 export type State = {
   classes: Clazz[],
   edges: Edge[]
+}
+
+export type Point = {
+  x: number,
+  y: number
 }
 
 export type Size = {

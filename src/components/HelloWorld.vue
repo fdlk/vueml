@@ -3,8 +3,8 @@
     <div class="col text-center">
       <h1>Package UML</h1>
       <p>{{classes}}</p>
-
-      <svg width="701" height="3560" version="1.1" baseProfile="full"
+      <p>{{edges}}</p>
+      <svg width="800" height="600" version="1.1" baseProfile="full"
            xmlns="http://www.w3.org/2000/svg">
         <defs>
           <marker id="ArrowGeneralization"
@@ -30,13 +30,16 @@
                   stroke="black"></path>
           </marker>
         </defs>
-        <g :transform="`translate(${clazz.x} ${clazz.y})`" v-for="(clazz, index) in classes">
+        <g :transform="`translate(${clazz.x-clazz.width/2.0} ${clazz.y-clazz.height/2.0})`" v-for="(clazz, index) in classes">
           <class :compartments="clazz.compartments"
                  :width="clazz.width || 120"
                  :key="clazz.id"
                  ref="classes"></class>
         </g>
-        <!--<arrow :x1="200" :y1="30" :x2="122" :y2="80" type="gen" fromLabel="from" toLabel="to"></arrow>-->
+        <arrow v-for="edge in edges"
+               v-if="edge.points && edge.points.length"
+               :points = "edge.points"
+               :type="edge.type"></arrow>
       </svg>
     </div>
   </div>
@@ -51,7 +54,7 @@
   export default {
     name: 'hello-world',
     computed: {
-      ...mapState(['classes'])
+      ...mapState(['classes', 'edges'])
     },
     methods: {
       ...mapMutations({

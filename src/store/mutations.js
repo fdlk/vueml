@@ -6,6 +6,7 @@ export const SET_DIMENSIONS = '__SET_DIMENSIONS__'
 
 export default {
   [SET_DIMENSIONS] (state: State, dimensions: Size[]) {
+    // once mounted, the node width and heights become clear and they can be layout
     const g = new Dagre.graphlib.Graph()
     g.setGraph({})
     g.setDefaultEdgeLabel(function () { return {} })
@@ -17,11 +18,9 @@ export default {
     }
     state.edges.forEach(edge => g.setEdge(edge.from, edge.to))
     Dagre.layout(g)
-    g.nodes().forEach(function (v) {
-      console.log('Node ' + v + ': ' + JSON.stringify(g.node(v)))
-    })
     g.edges().forEach(function (e) {
-      console.log('Edge ' + e.v + ' -> ' + e.w + ': ' + JSON.stringify(g.edge(e)))
+      const index = state.edges.findIndex(edge => edge.from === e.v && edge.to === e.w)
+      state.edges[index].points = g.edge(e).points
     })
   }
 }
