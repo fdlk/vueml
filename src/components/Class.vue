@@ -1,7 +1,6 @@
 <template>
   <g>
-    <rect :height="y[compartments.length]" :width="width"
-          style="stroke: rgb(51, 50, 46); fill: rgb(253, 246, 227);"></rect>
+    <rect :height="y[compartments.length]" :width="width"></rect>
     <g v-for="(compartment, index) in compartments"
        :transform="`translate(0 ${y[index]})`"
        :key="index">
@@ -33,3 +32,15 @@
     }
   }
 </script>
+
+<style scoped>
+  rect {
+    stroke: rgb(51, 50, 46);
+    fill: rgb(253, 246, 227);
+  }
+  g {
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+  }
+</style>

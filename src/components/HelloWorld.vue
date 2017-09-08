@@ -5,7 +5,7 @@
       {{classes}}
       <svg width="701" height="3560" version="1.1" baseProfile="full"
            xmlns="http://www.w3.org/2000/svg"
-           style="font-weight: bold; font-size: 12pt; font-family: Calibri, Helvetica, sans-serif; stroke-width: 3px; stroke-linejoin: round; stroke-linecap: round;">
+           style="">
         <g :transform="`translate(${200 * index + 1} 1)`" v-for="(clazz, index) in classes">
           <class :compartments="clazz.compartments"
                  :width=120
