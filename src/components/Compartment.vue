@@ -1,19 +1,23 @@
 <template>
   <g>
-    <uml-line v-for="(line, index) in lines" :y="(index + 1) * 15 + 7.5"
-              :text="line"
-              :key="index"></uml-line>
+    <text v-for="(line, index) in lines"
+          :x="8"
+          :y="(index + 1) * 15 + 7.5"
+          :key="index">{{line}}</text>
   </g>
 </template>
 
 <script>
-  import UmlLine from './Line'
-
   export default {
     name: 'component',
-    props: ['lines'],
-    components: {
-      UmlLine
-    }
+    props: ['lines']
   }
 </script>
+
+<style scoped>
+  text {
+    font-weight: bold;
+    font-size: 12pt;
+    font-family: Calibri, Helvetica, sans-serif;
+  }
+</style>
