@@ -14,9 +14,10 @@
   import Compartment from './Compartment'
   import Divider from './Divider'
 
+  // vertical layout
   // lines have height 15, dividers have height 1, compartments have padding 7.5
   const height = compartment => (compartment.lines.length + 1) * 15 + 1
-  const cumulativeSum = (a, b) => [...a, a[a.length - 1] + b]
+  const cumulativeSum = (sums, term) => [...sums, sums[sums.length - 1] + term]
 
   export default {
     props: ['compartments', 'width'],
@@ -37,10 +38,5 @@
   rect {
     stroke: rgb(51, 50, 46);
     fill: rgb(253, 246, 227);
-  }
-  g {
-    stroke-width: 3px;
-    stroke-linejoin: round;
-    stroke-linecap: round;
   }
 </style>
