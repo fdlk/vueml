@@ -2,8 +2,10 @@
   <div class="row">
     <div class="col text-center">
       <h1>Package UML</h1>
-      <p>{{classes}}</p>
-      <p>{{edges}}</p>
+      <p>
+        <code>{{classes | json}}</code><br/>
+        <code>{{edges | json}}</code>
+      </p>
       <svg width="800" height="600" version="1.1" baseProfile="full"
            xmlns="http://www.w3.org/2000/svg">
         <defs>
@@ -67,6 +69,11 @@
     },
     mounted () {
       this.setDimensions(this.$refs.classes.map(clazz => clazz.getDimensions()))
+    },
+    filters: {
+      json (x) {
+        return JSON.stringify(x, undefined, 2)
+      }
     }
   }
 </script>
